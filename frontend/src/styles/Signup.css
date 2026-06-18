@@ -1,0 +1,415 @@
+html,
+body,
+#root{
+margin:0;
+padding:0;
+width:100%;
+min-height:100%;
+overflow-x:hidden;
+background:#fffaf8;
+font-family:sans-serif;
+}
+
+/* =========================
+PAGE
+========================= */
+
+.signup-page{
+width:100%;
+min-height:90vh;
+background:#fffaf8;
+position:relative;
+overflow:hidden;
+padding:30px 4%;
+}
+
+/* =========================
+BG
+========================= */
+
+.signup-bg{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#fffaf8;
+z-index:0;
+}
+
+/* =========================
+WRAPPER
+========================= */
+
+.signup-wrapper{
+position:relative;
+z-index:2;
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:0.9fr 500px 1fr;
+gap:-0px;
+align-items:center;
+}
+
+/* =========================
+LEFT SIDE
+========================= */
+
+.signup-left{
+display:flex;
+flex-direction:column;
+justify-content:center;
+margin-left:-200px;
+}
+
+.journey-text{
+color:#ff6b35;
+font-size:18px;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.signup-left h1{
+font-size:60px;
+font-weight:900;
+line-height:1.05;
+margin:0;
+color:#071133;
+width:500px;
+}
+
+.signup-left h1 span{
+display:block;
+color:#ff6b35;
+}
+
+.signup-left p{
+font-size:17px;
+line-height:1.8;
+color:#64748b;
+margin-top:25px;
+margin-bottom:40px;
+max-width:430px;
+}
+
+/* =========================
+FEATURES
+========================= */
+
+.feature-icons{
+display:flex;
+gap:40px;
+margin-top:15px;
+}
+
+.feature-item{
+text-align:center;
+min-width:90px;
+}
+
+.feature-circle{
+width:60px;
+height:60px;
+border-radius:50%;
+background:#fff1ea;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+margin:auto;
+margin-bottom:14px;
+}
+
+.feature-item h4{
+margin:0;
+font-size:14px;
+font-weight:700;
+color:#071133;
+line-height:1.5;
+}
+
+.feature-item span{
+font-size:12px;
+color:#64748b;
+line-height:1.5;
+display:block;
+margin-top:8px;
+}
+
+/* =========================
+REMOVE IMAGE
+========================= */
+
+.bottom-image{
+display:none;
+}
+
+/* =========================
+CENTER CARD
+========================= */
+
+.signup-card{
+background:white;
+padding:25px;
+border-radius:28px;
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+width:110%;
+max-width:1500px;
+margin:auto;
+margin-left:110px;
+}
+
+.top-banner{
+height:110px;
+background:#fff1ea;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700;
+color:#ff6b35;
+margin-bottom:25px;
+}
+
+.signup-card h2{
+font-size:50px;
+margin:0;
+color:#071133;
+text-align:center;
+width:100%;
+}
+
+.signup-card p{
+color:#64748b;
+margin-top:10px;
+margin-bottom:25px;
+text-align:center;
+width:100%;
+}
+
+.signup-card input{
+width:100%;
+padding:16px;
+margin-bottom:15px;
+border:1px solid #e2e8f0;
+border-radius:12px;
+font-size:15px;
+box-sizing:border-box;
+outline:none;
+}
+
+.signup-card input:focus{
+border-color:#ff6b35;
+}
+
+.signup-btn{
+width:100%;
+padding:16px;
+border:none;
+border-radius:12px;
+background:#ff6b35;
+color:white;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+}
+
+.signup-btn:hover{
+transform:translateY(-3px);
+}
+
+/* =========================
+DIVIDER
+========================= */
+
+.divider{
+display:flex;
+align-items:center;
+gap:12px;
+margin:25px 0;
+color:#64748b;
+font-size:14px;
+}
+
+.divider span{
+flex:1;
+height:1px;
+background:#e2e8f0;
+}
+
+/* =========================
+SOCIAL
+========================= */
+
+.social-login{
+display:flex;
+gap:10px;
+}
+
+.social-login button{
+flex:1;
+padding:14px;
+border:none;
+border-radius:12px;
+background:#f8fafc;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.social-login button:hover{
+background:#ff6b35;
+color:white;
+}
+
+/* =========================
+LOGIN TEXT
+========================= */
+
+.login-text{
+margin-top:25px;
+font-size:15px;
+color:#64748b;
+text-align:center;
+width:100%;
+}
+
+.login-text button{
+background:none;
+border:none;
+color:#ff6b35;
+font-weight:700;
+cursor:pointer;
+margin-left:5px;
+}
+
+/* =========================
+RIGHT SIDE
+========================= */
+
+.signup-right{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+margin-left:350px;
+}
+
+.image-card{
+width:320px;
+height:200px;
+background:linear-gradient(
+135deg,
+#ffb38a,
+#ffd6c3
+);
+border-radius:22px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:700;
+color:white;
+cursor:pointer;
+box-shadow:0 12px 25px rgba(0,0,0,.10);
+transition:.4s;
+}
+
+.image-card:hover{
+transform:translateY(-8px);
+}
+
+.card-1{
+transform:rotate(8deg);
+}
+
+.card-2{
+transform:rotate(-8deg);
+margin-top:-30px;
+}
+
+.card-3{
+transform:rotate(5deg);
+margin-top:-30px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:1400px){
+
+.signup-left{
+margin-left:0;
+}
+
+.signup-right{
+margin-left:0;
+}
+
+.signup-card{
+margin-left:auto;
+}
+}
+
+@media(max-width:1200px){
+
+.signup-wrapper{
+grid-template-columns:1fr;
+}
+
+.signup-left{
+margin-left:0;
+text-align:center;
+align-items:center;
+}
+
+.signup-left h1{
+font-size:50px;
+max-width:100%;
+}
+
+.signup-left p{
+max-width:500px;
+margin:auto;
+margin-top:20px;
+margin-bottom:25px;
+}
+
+.feature-icons{
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.signup-right{
+display:none;
+}
+
+.signup-card{
+margin:auto;
+}
+}
+
+@media(max-width:768px){
+
+.signup-left h1{
+font-size:42px;
+}
+
+.signup-card{
+padding:25px;
+}
+
+.social-login{
+flex-direction:column;
+}
+
+.image-card{
+width:100%;
+max-width:320px;
+height:200px;
+}
+}

@@ -1,0 +1,303 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+html,
+body,
+#root{
+width:100%;
+min-height:100%;
+overflow-x:hidden;
+background:#fffaf8;
+color:#111827;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+ul{
+list-style:none;
+}
+
+button{
+border:none;
+outline:none;
+cursor:pointer;
+font-family:inherit;
+}
+
+input,
+textarea{
+outline:none;
+border:none;
+font-family:inherit;
+}
+
+img{
+width:100%;
+display:block;
+object-fit:cover;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:42px;
+font-weight:800;
+display:flex;
+align-items:center;
+cursor:pointer;
+}
+
+.logo-orange{
+color:#ff6b35;
+}
+
+.logo-dark{
+color:#071133;
+}
+
+.logo-plane{
+color:#ff6b35;
+font-size:30px;
+margin-left:4px;
+transform:rotate(-20deg);
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:25px;
+}
+
+.nav-links a{
+font-weight:600;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#ff6b35;
+}
+
+.nav-auth{
+display:flex;
+gap:12px;
+}
+
+.login-btn{
+padding:10px 20px;
+border:2px solid #ff6b35;
+border-radius:10px;
+background:white;
+color:#111827;
+font-weight:600;
+}
+
+.signup-btn{
+padding:10px 20px;
+background:#ff6b35;
+color:white;
+border-radius:10px;
+font-weight:600;
+}
+
+/* =========================
+   COMMON CONTAINER
+========================= */
+
+.container{
+width:100%;
+padding:0 4%;
+margin:auto;
+}
+
+.section{
+padding:60px 4%;
+}
+
+.section-title{
+font-size:42px;
+font-weight:800;
+color:#0f172a;
+text-align:center;
+margin-bottom:20px;
+}
+
+.section-subtitle{
+font-size:18px;
+color:#64748b;
+text-align:center;
+margin-bottom:40px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+background:#071133;
+color:white;
+
+padding:12px 15px;
+
+text-align:center;
+}
+
+.footer h3{
+font-size:20px;
+font-weight:700;
+margin:0 0 4px;
+}
+
+.footer p{
+font-size:12px;
+margin:0;
+opacity:.9;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-track{
+background:#f1f5f9;
+}
+
+::-webkit-scrollbar-thumb{
+background:#ff6b35;
+border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background:#e85d2a;
+}
+
+*{
+scrollbar-width:thin;
+scrollbar-color:#ff6b35 #f1f5f9;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeLeft{
+from{
+opacity:0;
+transform:translateX(-30px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@keyframes fadeRight{
+from{
+opacity:0;
+transform:translateX(30px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.navbar{
+padding:20px;
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.nav-auth{
+flex-direction:column;
+width:100%;
+}
+
+.login-btn,
+.signup-btn{
+width:100%;
+}
+
+.section{
+padding:40px 20px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.section-subtitle{
+font-size:16px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+}

@@ -1,0 +1,401 @@
+html,
+body,
+#root{
+margin:0;
+padding:0;
+width:100%;
+background:#fffaf8;
+overflow-x:hidden;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.states-page{
+width:100%;
+min-height:100vh;
+padding:40px 4%;
+background:#fffaf8;
+position:relative;
+overflow:hidden;
+}
+
+/* =========================
+   BG
+========================= */
+
+.states-bg{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:350px;
+
+background:
+linear-gradient(
+180deg,
+#fff4ee,
+#fffaf8
+);
+
+z-index:0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.states-header{
+position:relative;
+z-index:2;
+text-align:center;
+margin-bottom:40px;
+}
+
+.states-icon{
+font-size:34px;
+margin-bottom:10px;
+}
+
+.states-header h1{
+font-size:60px;
+font-weight:800;
+color:#0f172a;
+margin-bottom:10px;
+}
+
+.states-header p{
+font-size:20px;
+color:#64748b;
+}
+
+.states-line{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+margin:18px 0;
+}
+
+.states-line span{
+width:70px;
+height:2px;
+background:#ff6b35;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box-state{
+max-width:650px;
+margin:0 auto 50px;
+display:flex;
+gap:12px;
+position:relative;
+z-index:2;
+}
+
+.search-box-state input{
+flex:1;
+padding:16px;
+border:none;
+border-radius:15px;
+background:white;
+font-size:16px;
+outline:none;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+}
+
+.search-btn{
+padding:16px 28px;
+border:none;
+border-radius:15px;
+background:#ff6b35;
+color:white;
+font-weight:700;
+cursor:pointer;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.states-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(350px,1fr));
+
+gap:25px;
+
+max-width:1300px;
+margin:auto;
+
+position:relative;
+z-index:2;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.state-card{
+background:white;
+border-radius:24px;
+overflow:hidden;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.08);
+
+transition:.4s;
+}
+
+.state-card:hover{
+transform:translateY(-10px);
+}
+
+.state-card:hover .state-img{
+transform:scale(1.08);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.state-image{
+width:100%;
+height:220px;
+overflow:hidden;
+border-radius:18px 18px 0 0;
+position:relative;
+}
+
+.state-img{
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:center;
+display:block;
+transition:.4s ease;
+}
+.heart-btn{
+position:absolute;
+top:15px;
+right:15px;
+
+width:50px;
+height:50px;
+
+border:none;
+border-radius:50%;
+
+background:white;
+
+font-size:20px;
+cursor:pointer;
+
+color:#ff3366;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.15);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.state-content{
+padding:22px;
+}
+
+.state-tag{
+display:inline-block;
+
+padding:8px 15px;
+
+background:#fff1e9;
+color:#ff6b35;
+
+border-radius:20px;
+
+font-size:13px;
+
+margin-bottom:15px;
+}
+
+.state-content h2{
+font-size:30px;
+font-weight:700;
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.state-content p{
+color:#64748b;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.state-footer{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.rating{
+font-weight:600;
+color:#0f172a;
+}
+
+.rating span{
+color:#64748b;
+margin-left:5px;
+font-size:14px;
+}
+
+.popular-badge{
+padding:8px 14px;
+border-radius:20px;
+
+background:#e6f6ff;
+color:#2196f3;
+
+font-size:13px;
+font-weight:600;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.state-btn{
+display:block;
+
+text-align:center;
+
+padding:14px;
+
+border:2px solid #ff6b35;
+
+border-radius:12px;
+
+text-decoration:none;
+
+color:#ff6b35;
+
+font-size:15px;
+font-weight:700;
+
+transition:.3s;
+}
+
+.state-btn:hover{
+background:#ff6b35;
+color:white;
+}
+
+/* =========================
+   VIEW ALL
+========================= */
+
+.view-all-section{
+text-align:center;
+margin-top:40px;
+}
+
+.view-all-btn{
+padding:15px 35px;
+
+border:none;
+border-radius:14px;
+
+background:#ff6b35;
+color:white;
+
+font-size:16px;
+font-weight:700;
+
+cursor:pointer;
+}
+
+/* =========================
+   MORE
+========================= */
+
+.more-states{
+text-align:center;
+margin-top:60px;
+}
+
+.more-states h2{
+font-size:34px;
+color:#0f172a;
+margin-bottom:10px;
+}
+
+.more-states p{
+font-size:18px;
+color:#64748b;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.states-page{
+padding:30px 20px;
+}
+
+.states-header h1{
+font-size:40px;
+}
+
+.states-header p{
+font-size:16px;
+}
+
+.search-box-state{
+flex-direction:column;
+}
+
+.states-grid{
+grid-template-columns:1fr;
+}
+
+.state-content h2{
+font-size:24px;
+}
+
+}
+
+
+.state-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 18px 18px 0 0;
+  position: relative;
+}
+
+.state-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.state-card:hover .state-img {
+  transform: scale(1.08);
+}
